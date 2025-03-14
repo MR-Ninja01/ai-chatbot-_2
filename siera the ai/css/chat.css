@@ -1,0 +1,15 @@
+/* Global styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+body
+{
+    /* background-image: url(/resource/consult\ iamge.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

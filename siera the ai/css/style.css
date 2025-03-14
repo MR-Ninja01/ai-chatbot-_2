@@ -1,0 +1,250 @@
+/* Global styles */
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/resource/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slider
+{
+    /* background-image: url(/resource/bg_2.jpg); */
+}
+
+
+/* Header styling */
+.header {
+    opacity: 0.5;
+    background-color:white;
+    height: 70px;
+    width: 100%;
+    /* position: relative; */
+    /* margin-top: 30px; */
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    /* Vertically align items */
+    justify-content: space-between;
+    /* Space between logo and navbar */
+    /* background-color: #f8f9fa; */
+    padding: 0 16px;
+    flex-wrap: nowrap;
+    /* Prevent stacking */
+}
+
+/* Logo styling */
+.logo {
+    max-width: 400px;
+    margin-left: 50px;
+    height: auto;
+    flex-shrink: 0;
+    /* Prevent logo from shrinking */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 270px;
+        height: auto;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 0;
+    /* background-color: white; */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    /* Allow navbar to expand */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.2mm;
+    margin-left: 25px;
+    color: black;
+    text-decoration: none;
+
+    transition: transform 0.25s ease-out;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+.navbar a:hover {
+
+    color: #007bff;
+
+    /* transition: ease-in-out 2s; */
+
+}
+
+
+
+
+/* Hamburger icon positioning */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    margin-top: 0;
+    border-top: none;
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+
+
+    }
+
+    .dropdown-toggle:active {
+        pointer-events: none;
+    }
+}
+
+/* Mobile view fixes */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        /* Keep row layout on mobile */
+        height: auto;
+        padding: 8px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        /* Keep navbar items aligned horizontally */
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-left: -20px;
+        margin-bottom: 0;
+    }
+}
+
+
+/* left & right */
+.left {
+    margin-top: 15px;
+    float: left;
+    /* background-color: #5bf2c0; */
+    height: 520px;
+}
+
+
+.mid-text {
+
+    font-weight: 600;
+    min-width: 300px;
+    padding: 15%;
+}
+
+.main-text {
+    font-style: italic;
+    justify-items: center;
+    text-align: center;
+    font-size: 62px;
+    
+}
+
+.mid-text p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+.right {
+    margin-top: 15px;
+    float: right;
+    height: 520px;
+    padding: 8%;
+}
+
+.doc_img {
+    /* padding: 1%; */
+    height: 280px;
+    position: relative;
+    left: 50px;
+    width: 300px;
+}
+
+/* left & right */
+
+.link_button {
+    width: 150px;
+    min-height: 30px;
+    display: block;
+    position: relative;
+    left: 130px;
+    border: 1px solid;
+    box-shadow: 1px 1px 2px 2px;
+    top:10px;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+
+.link_button a 
+{
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link_button:hover
+{
+    background-color: chartreuse;
+    box-shadow: 1px 1px 2px 2px;
+}
+
+/* video intro
+/* Video Container for Homepage */
+/* .video {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin-bottom: 30px;
+} */
+
+/* #video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 1s ease;
+} */
+*/
+/* video intro */
